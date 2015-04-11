@@ -31,7 +31,8 @@
 		<!-- EVENT viewtopic_buttons_top_before -->
 
 	<!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-		<a href="{U_POST_REPLY_TOPIC}" class="button icon-button <!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->reply-icon<!-- ENDIF -->" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
+		<a href="{U_POST_REPLY_TOPIC}" class="button icon-button title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
+			<span class="icon icon-<!-- IF S_IS_LOCKED -->lock<!-- ELSE -->reply<!-- ENDIF --> "></span>
 			<!-- IF S_IS_LOCKED -->{L_BUTTON_TOPIC_LOCKED}<!-- ELSE -->{L_BUTTON_POST_REPLY}<!-- ENDIF -->
 		</a>
 	<!-- ENDIF -->
@@ -44,12 +45,12 @@
 	<!-- IF S_DISPLAY_SEARCHBOX -->
 		<div class="search-box">
 			<form method="get" id="topic-search" action="{S_SEARCHBOX_ACTION}">
-			<fieldset>
-				<input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_TOPIC}" />
-				<button class="button icon-button search-icon" type="submit" title="{L_SEARCH}">{L_SEARCH}</button>
-				<a href="{U_SEARCH}" class="button icon-button search-adv-icon" title="{L_SEARCH_ADV}">{L_SEARCH_ADV}</a>
-				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
-			</fieldset>
+				<fieldset>
+					<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_FORUM}" />
+					<button class="button icon-button" type="submit" title="{L_SEARCH}"><span class="icon icon-magnifying-glass resize_btn_icon"></span><span class="audible">{L_SEARCH}</span></button>
+					<a href="{U_SEARCH}" class="button icon-button" title="{L_SEARCH_ADV}"><span class="icon icon-cog resize_btn_icon"></span><span class="audible">{L_SEARCH_ADV}</span></a>
+					{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+				</fieldset>
 			</form>
 		</div>
 	<!-- ENDIF -->
@@ -241,7 +242,7 @@
 					<!-- ENDIF -->
 					<!-- IF postrow.U_QUOTE -->
 						<li>
-							<a href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}" class="button icon-button quote-icon"><span>{L_QUOTE}</span></a>
+							<a href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}" class="button icon-button"><i class="icon icon-quote"></i><span>{L_QUOTE}</span></a>
 						</li>
 					<!-- ENDIF -->
 					<!-- EVENT viewtopic_body_post_buttons_after -->

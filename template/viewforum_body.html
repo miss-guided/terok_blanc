@@ -41,7 +41,7 @@
 		<div class="buttons">
 			<!-- EVENT viewforum_buttons_top_before -->
 
-			<a href="{U_POST_NEW_TOPIC}" class="button icon-button <!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->post-icon<!-- ENDIF -->" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->">
+			<a href="{U_POST_NEW_TOPIC}" class="button icon-button" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->"><span class="icon  <!-- IF S_IS_LOCKED -->icon-lock<!-- ELSE -->icon-plus<!-- ENDIF -->"></span>
 				<!-- IF S_IS_LOCKED -->{L_BUTTON_FORUM_LOCKED}<!-- ELSE -->{L_BUTTON_NEW_TOPIC}<!-- ENDIF -->
 			</a>
 
@@ -54,8 +54,8 @@
 			<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
 			<fieldset>
 				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_FORUM}" />
-				<button class="button icon-button search-icon" type="submit" title="{L_SEARCH}">{L_SEARCH}</button>
-				<a href="{U_SEARCH}" class="button icon-button search-adv-icon" title="{L_SEARCH_ADV}">{L_SEARCH_ADV}</a>
+				<button class="button icon-button" type="submit" title="{L_SEARCH}"><span class="icon icon-magnifying-glass resize_btn_icon"></span><span class="audible">{L_SEARCH}</span></button>
+				<a href="{U_SEARCH}" class="button icon-button" title="{L_SEARCH_ADV}"><span class="icon icon-cog resize_btn_icon"></span><span class="audible">{L_SEARCH_ADV}</span></a>
 				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
 			</fieldset>
 			</form>
