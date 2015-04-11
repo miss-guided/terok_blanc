@@ -26,13 +26,12 @@ ul.topiclist li.row dl {
 }
 
 ul.topiclist dt, ul.topiclist dd {
-	display: block;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 }
 
 ul.topiclist dt {
 	width: 100%;
-	margin-right: -440px;
 	font-size: 1.1em;
 }
 
@@ -49,11 +48,11 @@ ul.topiclist.two-columns dt {
 }
 
 ul.topiclist dt .list-inner {
-	width: 29%;
 	padding-left: 5px;
 	padding-right: 5px;
 	display:inline-block;
 	vertical-align: top;
+	width: 85%;
 }
 
 ul.topiclist.missing-column dt .list-inner {
@@ -190,14 +189,14 @@ dl a.icon-link {						/* topic row icon links */
 }
 
 dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
-	width: 80px;
+	width: 10%;
 	text-align: center;
 	line-height: 2.2em;
 	font-size: 1.2em;
 }
 
 dd.posts, dd.topics, dd.views {
-	width: 95px;
+	width: 10%;
 }
 
 /* List in forum description */
@@ -213,7 +212,7 @@ dl.icon dt li {
 }
 
 dd.lastpost, dd.redirect, dd.moderation, dd.time, dd.info {
-	width: 250px;
+	width: 20%;
 	font-size: 1.1em;
 }
 
