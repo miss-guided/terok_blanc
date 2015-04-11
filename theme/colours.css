@@ -17,7 +17,7 @@ Colours and backgrounds for common.css
 
 html, body {
 	color: #888;
-	background-color: #060606;
+	background-color: #FFF;
 }
 
 h1 {
@@ -60,7 +60,7 @@ hr {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 #wrap {
-	background-color: #151515;
+	background-color: #FFF;
 	border-color: transparent;
 }
 
@@ -70,7 +70,7 @@ hr {
 }
 
 .navbar {
-	background-color: #3B3B3B;
+	background-color: #D2E3D4;
 }
 
 .forabg {
@@ -127,7 +127,7 @@ ul.navlinks {
 }
 
 .navbar .icon:before {
-	color: #008B00;
+	color: #2C6D36;
 }
 
 /* Table styles
@@ -236,7 +236,7 @@ li.reported:hover {
 
 div.rules {
 	background-color: #ECD5D8;
-	color: #BC2A4D;
+	color: #2C6D36;
 }
 
 p.post-notice {
@@ -261,7 +261,7 @@ p.post-notice.reported:before, p.post-notice.error:before {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #008B00; }
+a { color: #2C6D36; }
 a:hover	{ color: #558000; }
 
 /* Links on gradient backgrounds */
@@ -331,7 +331,7 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #1B1B1B;
+	background-color: #D2E3D4;
 }
 
 ul.topiclist li {
@@ -364,7 +364,7 @@ li.row strong {
 }
 
 li.row:hover {
-	background-color: #3B3B3B;
+	background-color: #D2E3D4;
 }
 
 li.row:hover dd {
@@ -979,7 +979,7 @@ input.disabled {
 }
 
 ul.linklist li.responsive-menu a.responsive-menu-link:before {
-	border-color: #008B00;
+	border-color: #2C6D36;
 }
 
 ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist li.responsive-menu.visible a.responsive-menu-link:before {
