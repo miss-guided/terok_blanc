@@ -193,13 +193,13 @@ dl.details dd {
 
 .pagination li.active span {
 	color: #ffffff;
-	background-color: #4692BF;
-	border-color: #4692BF;
+	background-color: #008B00;
+	border-color: #558000;
 }
 
 .pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	border-color: #368AD2;
-	background-color: #368AD2;
+	border-color: #558000;
+	background-color: #008B00;
 	color: #ffffff;
 }
 
@@ -308,22 +308,11 @@ a.top2 {
 }
 
 /* Arrow links  */
-a.arrow-up			{ background-image: url("./images/arrow_up.gif"); }
-a.arrow-down		{ background-image: url("./images/arrow_down.gif"); }
-a.arrow-left		{ background-image: url("./images/arrow_left.gif"); }
-a.arrow-right		{ background-image: url("./images/arrow_right.gif"); }
 
 a.arrow-up:hover {
 	background-color: transparent;
 }
 
-a.arrow-left:hover {
-	color: #368AD2;
-}
-
-a.arrow-right:hover {
-	color: #368AD2;
-}
 
 /*
 ------------------------------------------------------------
@@ -629,13 +618,10 @@ Colours and backgrounds for buttons.css
 	color: #558000;
 }
 
-.dropdown-select {
-	color: #cbcbcb;
-}
 
 .button:hover, .dropdown-visible .dropdown-select, .nojs .dropdown-container:hover .dropdown-select {
-	background-color: #232628;
-	background-image: linear-gradient(#020202, #101112 40%, #191B1D);
+	background-color: #CBCBCB;
+	background-image: none;
 }
 
 .dropdown-select:after	{ border-color: #DADADA; }
@@ -804,11 +790,10 @@ Colours and backgrounds for forms.css
 select {
 	border-color: #666666;
 	background-color: #FAFAFA;
-	color: #ffffff;
 }
 
 label {
-	color: #8D8D8D;
+	color: #fff;
 }
 
 option.disabled-option {
@@ -827,7 +812,7 @@ fieldset.fields1 {
 
 /* Hover effects */
 fieldset dl:hover dt label {
-	color: #ffffff;
+	color: #CBCBCB;
 }
 
 fieldset.fields2 dl:hover dt label {

@@ -21,38 +21,24 @@
 	vertical-align: bottom;
 }
 
-.dropdown-select {
-	padding-right: 24px;
-}
-
-.icon-button:before {
-	background: transparent 0 0 no-repeat;
-	content: '';
-	display: inline-block;
-	float: right;
-	height: 12px;
-	margin: 3px 0 0 2px;
-	width: 12px;
-}
 
 .dropdown-select.icon-button:before {
 	margin-right: 4px;
 }
 
-.dropdown-select:after {
-	background-position: -103px 10px;
+.dropdown-select .icon {
+	margin-left: 26px;
+}
+.dropdown-select .icon:before {
 	border-left: 1px solid;
-	content: '';
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 0px;
 	height: 22px;
-	width: 16px;
+	width: 25px;
+	font-size: 24px;
 }
 
-.dropdown-visible .dropdown-select:after, .nojs .dropdown-container:hover .dropdown-select:after {
-	background-position: -103px -10px;
-}
 
 .buttons, .buttons .button {
 	float: left;
@@ -171,11 +157,7 @@ ul.linklist.bulletin > li.small-icon:before {
 }
 
 .has-profile .post-buttons {
-	float: none;
-	position: absolute;
-	margin: 0;
-	right: 0;
-	top: 5px;
+
 }
 
 .post-buttons > li {
@@ -185,6 +167,8 @@ ul.linklist.bulletin > li.small-icon:before {
 
 .post-buttons .icon-button {
 	padding: 0 5px;
+	text-align: center;
+	width: 11px;
 }
 
 .hastouch .post-buttons .icon-button {
