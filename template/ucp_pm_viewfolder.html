@@ -57,7 +57,8 @@
 
 		<!-- BEGIN messagerow -->
 			<li class="row<!-- IF messagerow.S_ROW_COUNT is odd --> bg1<!-- ELSE --> bg2<!-- ENDIF --><!-- IF messagerow.PM_CLASS --> {messagerow.PM_CLASS}<!-- ENDIF -->">
-				<dl class="icon {messagerow.FOLDER_IMG_STYLE}">
+				<dl>
+					<span class="icon icon-menu {messagerow.FOLDER_IMG_STYLE}"></span>
 					<dt<!-- IF messagerow.PM_ICON_URL and S_PM_ICONS --> style="background-image: url({messagerow.PM_ICON_URL}); background-repeat: no-repeat;"<!-- ENDIF -->>
 						<!-- IF messagerow.S_PM_UNREAD and not messagerow.S_PM_DELETED --><a href="{messagerow.U_VIEW_PM}" class="icon-link"></a><!-- ENDIF -->
 						<div class="list-inner">
@@ -101,15 +102,15 @@
 			<select name="mark_option">{S_MARK_OPTIONS}{S_MOVE_MARKED_OPTIONS}</select> <input class="button2" type="submit" name="submit_mark" value="{L_GO}" />
 			<div><a href="#" onclick="marklist('viewfolder', 'marked_msg', true); return false;">{L_MARK_ALL}</a> &bull; <a href="#" onclick="marklist('viewfolder', 'marked_msg', false); return false;">{L_UNMARK_ALL}</a></div>
 		</fieldset>
-	
+
 		<hr />
-	
+
 		<div class="action-bar bottom">
 			<div class="pagination">
 				{TOTAL_MESSAGES}
-				<!-- IF .pagination --> 
+				<!-- IF .pagination -->
 					<!-- INCLUDE pagination.html -->
-				<!-- ELSE --> 
+				<!-- ELSE -->
 					 &bull; {PAGE_NUMBER}
 				<!-- ENDIF -->
 			</div>
