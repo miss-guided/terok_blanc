@@ -13,24 +13,24 @@
 					<!-- IF S_DISPLAY_SEARCH -->
 						<li class="separator"></li>
 						<!-- IF S_REGISTERED_USER -->
-							<li class="small-icon icon-search-self"><a href="{U_SEARCH_SELF}" role="menuitem">{L_SEARCH_SELF}</a></li>
+							<li><span class="icon icon-user"></span> <a href="{U_SEARCH_SELF}" role="menuitem">{L_SEARCH_SELF}</a></li>
 						<!-- ENDIF -->
 						<!-- IF S_USER_LOGGED_IN -->
-							<li class="small-icon icon-search-new"><a href="{U_SEARCH_NEW}" role="menuitem">{L_SEARCH_NEW}</a></li>
+							<li> <span class="icon icon-new"></span> 	<a href="{U_SEARCH_NEW}" role="menuitem">{L_SEARCH_NEW}</a></li>
 						<!-- ENDIF -->
 						<!-- IF S_LOAD_UNREADS -->
-							<li class="small-icon icon-search-unread"><a href="{U_SEARCH_UNREAD}" role="menuitem">{L_SEARCH_UNREAD}</a></li>
+							<li><span class="icon icon-news"></span> <a href="{U_SEARCH_UNREAD}" role="menuitem">{L_SEARCH_UNREAD}</a></li>
 						<!-- ENDIF -->
-						<li class="small-icon icon-search-unanswered"><a href="{U_SEARCH_UNANSWERED}" role="menuitem">{L_SEARCH_UNANSWERED}</a></li>
-						<li class="small-icon icon-search-active"><a href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">{L_SEARCH_ACTIVE_TOPICS}</a></li>
+						<li> <span class="icon icon-inbox"></span> <a href="{U_SEARCH_UNANSWERED}" role="menuitem">{L_SEARCH_UNANSWERED}</a></li>
+						<li><span class="icon icon-rocket"></span> <a href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">{L_SEARCH_ACTIVE_TOPICS}</a></li>
 						<li class="separator"></li>
-						<li class="small-icon icon-search"><a href="{U_SEARCH}" role="menuitem">{L_SEARCH}</a></li>
+						<li><span class="icon icon-magnifying-glass"></span> <a href="{U_SEARCH}" role="menuitem">{L_SEARCH}</a></li>
 					<!-- ENDIF -->
 
 					<!-- IF not S_IS_BOT and (S_DISPLAY_MEMBERLIST or U_TEAM) -->
 						<li class="separator"></li>
-						<!-- IF S_DISPLAY_MEMBERLIST --><li class="small-icon icon-members"><a href="{U_MEMBERLIST}" role="menuitem">{L_MEMBERLIST}</a></li><!-- ENDIF -->
-						<!-- IF U_TEAM --><li class="small-icon icon-team"><a href="{U_TEAM}" role="menuitem">{L_THE_TEAM}</a></li><!-- ENDIF -->
+						<!-- IF S_DISPLAY_MEMBERLIST --><li> <span class="icon icon-users"></span> <a href="{U_MEMBERLIST}" role="menuitem">{L_MEMBERLIST}</a></li><!-- ENDIF -->
+						<!-- IF U_TEAM --><li> <span class="icon icon-cake"></span> <a href="{U_TEAM}" role="menuitem">{L_THE_TEAM}</a></li><!-- ENDIF -->
 					<!-- ENDIF -->
 					<li class="separator"></li>
 
