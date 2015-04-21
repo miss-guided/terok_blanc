@@ -39,6 +39,12 @@ body {
 /* Logo block
 ---------------------------------------- */
 @media all and ( max-width: 700px ) {
+	.postprofile .avatar img {
+		width: auto !important;
+		height: auto !important;
+		max-height: 32px;
+	}
+	
 	#site-description {
 		float: none;
 		width: auto;
@@ -408,11 +414,6 @@ body {
 		margin-right: 5px;
 	}
 
-	.postprofile .avatar img {
-		width: auto !important;
-		height: auto !important;
-		max-height: 32px;
-	}
 
 	.has-profile .postbody h3 {
 		margin-left: 0 !important;
@@ -590,6 +591,12 @@ body {
 	ul.topiclist dt {
 		width: 55%;
 	}
+	ul.topiclist.pmlist dt {
+		width: 70%;
+	}
+	ul.topiclist.pmlist dt .list-inner {
+		width: 100%;
+	}
 }
 
 @media all and (min-width: 750px){
@@ -621,7 +628,7 @@ body {
 	}
 	.postbody {
 		width: 85%;
-		float: left; 
+		float: left;
 	}
 
 }
