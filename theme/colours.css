@@ -5,7 +5,7 @@ Colours and backgrounds for common.css
 
 #151515 main bg
 #D2E3D4 even
-#737373 odd
+#EFF4EF odd
 #566D5D text
 #ffffff text lighter
 #008B00 green highlights color
@@ -30,7 +30,7 @@ h2 {
 
 h3 {
 	border-bottom-color: #CCCCCC;
-	color: #ffffff;
+	color: #000;
 }
 
 hr {
@@ -45,7 +45,7 @@ hr {
 .search-box .inputbox:hover,
 .search-box .inputbox:focus,
 .search-box .button:hover {
-	border-color: #282828;
+	border-color: none;
 }
 
 .search-header {
@@ -141,7 +141,7 @@ table.table1 tbody tr {
 }
 
 table.table1 tbody tr:hover, table.table1 tbody tr.hover {
-	background-color: #CFE1F6;
+	background-color: #D2E3D4;
 	color: #ffffff;
 }
 
@@ -166,7 +166,7 @@ table.info tbody th {
 /* Misc layout styles
 ---------------------------------------- */
 dl.details dt {
-	color: #ffffff;
+	color: #000;
 }
 
 dl.details dd {
@@ -440,7 +440,7 @@ blockquote blockquote {
 
 blockquote blockquote blockquote {
 	/* Nested quotes */
-	background-color: #EBEADD;
+	background-color: #EEADD;
 }
 
 /* Code block */
@@ -649,7 +649,7 @@ Colours and backgrounds for cp.css
 
 .panel-container .panel li.row {
 	border-bottom-color: #B5C1CB;
-	border-top-color: #737373;
+	border-top-color: #EFF4EF;
 }
 
 ul.cplist {
@@ -657,7 +657,7 @@ ul.cplist {
 }
 
 .panel-container .panel li.header dd, .panel-container .panel li.header dt {
-	color: #ffffff;
+	color: #2C6D36;
 }
 
 .panel-container table.table1 thead th {
@@ -686,7 +686,7 @@ ul.cplist {
 #tabs .activetab > a:hover {
 	background: #D2E3D4;
 	border-color: #D2E3D4;
-	color: #8d8d8d;
+	color: #2C6D36;
 }
 
 #tabs .activetab > a:hover {
@@ -701,7 +701,7 @@ ul.cplist {
 
 #minitabs .activetab > a,
 #minitabs .activetab > a:hover {
-	background-color: #737373;
+	background-color: #EFF4EF;
 	color: #ffffff;
 }
 
@@ -724,8 +724,8 @@ ul.cplist {
 }
 
 .panel-container .panel {
-	background-color: #737373;
-	color: #ffffff
+	background-color: #EFF4EF;
+	color: none;
 }
 
 #cp-main .pm {
@@ -942,13 +942,13 @@ input.disabled {
 }
 
 .dropdown-extended ul li:hover {
-	background-color: #CFE1F6;
+	background-color: #D2E3D4;
 	color: #ffffff;
 }
 
 .dropdown-extended .header, .dropdown-extended .footer {
 	border-color: #B9B9B9;
-	color: #ffffff;
+	color: none;
 }
 
 .dropdown-extended .footer {
