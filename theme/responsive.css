@@ -33,7 +33,7 @@ body {
 }
 
 #cp-main .forabg, #cp-main .forumdb, #cp-main .post, #cp-main .panel {
-	border-radius: 7px;
+	border-radius: 0px;
 }
 
 /* Logo block
@@ -44,7 +44,7 @@ body {
 		height: auto !important;
 		max-height: 32px;
 	}
-	
+
 	#site-description {
 		float: none;
 		width: auto;
