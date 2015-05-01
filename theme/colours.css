@@ -4,9 +4,9 @@ Colours and backgrounds for common.css
 
 
 #151515 main bg
-#3B3B3B even
+#D2E3D4 even
 #737373 odd
-#CBCBCB text
+#566D5D text
 #ffffff text lighter
 #008B00 green highlights color
 #DF6500 orange highlights color
@@ -16,8 +16,8 @@ Colours and backgrounds for common.css
 
 
 html, body {
-	color: #888;
-	background-color: #060606;
+	color: #5E7766;
+	background-color: #FFF;
 }
 
 h1 {
@@ -60,7 +60,7 @@ hr {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 #wrap {
-	background-color: #151515;
+	background-color: #FFF;
 	border-color: transparent;
 }
 
@@ -70,7 +70,7 @@ hr {
 }
 
 .navbar {
-	background-color: #3B3B3B;
+	background-color: #D2E3D4;
 }
 
 .forabg {
@@ -82,7 +82,7 @@ hr {
 }
 
 .panel {
-	background-color: #3B3B3B;
+	background-color: #D2E3D4;
 }
 
 .post:target .content {
@@ -94,22 +94,22 @@ hr {
 }
 
 .bg1 {
-	background-color: #3B3B3B;
+	background-color: #EFF4EF;
 }
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
-	background-color: #3B3B3B;
+	background-color: #D2E3D4;
 }
 
 .bg2 {
-	background-color: #1B1B1B;
+	background-color: #E5EEE6;
 }
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
-	background-color: #1B1B1B;
+	background-color: #E5EEE6;
 }
 
-.bg3	{ background-color: #3B3B3B; }
+.bg3	{ background-color: #D2E3D4; }
 
 .ucprowbg {
 	background-color: #DCDEE2;
@@ -127,7 +127,7 @@ ul.navlinks {
 }
 
 .navbar .icon:before {
-	color: #008B00;
+	color: #2C6D36;
 }
 
 /* Table styles
@@ -146,7 +146,7 @@ table.table1 tbody tr:hover, table.table1 tbody tr.hover {
 }
 
 table.table1 td {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 table.table1 tbody td {
@@ -155,7 +155,7 @@ table.table1 tbody td {
 
 table.table1 tbody th {
 	border-bottom-color: #ffffff;
-	color: #CBCBCB333;
+	color: #566D5D333;
 	background-color: #ffffff;
 }
 
@@ -170,7 +170,7 @@ dl.details dt {
 }
 
 dl.details dd {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 .sep {
@@ -181,9 +181,9 @@ dl.details dd {
 ---------------------------------------- */
 
 .pagination li a {
-	color: #5C758C;
-	background-color: #ECEDEE;
-	border-color: #B4BAC0;
+	color: #67816C;
+	background-color: #FFF;
+	border-color: #B7BDB8;
 }
 
 .pagination li.ellipsis span {
@@ -192,14 +192,14 @@ dl.details dd {
 }
 
 .pagination li.active span {
-	color: #ffffff;
-	background-color: #008B00;
-	border-color: #558000;
+	color: #67816C;
+	background-color: #FFF;
+	border-color: #B7BDB8;
 }
 
 .pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	border-color: #558000;
-	background-color: #008B00;
+	border-color: #5AAE67;
+	background-color: #5AAE67;
 	color: #ffffff;
 }
 
@@ -236,7 +236,7 @@ li.reported:hover {
 
 div.rules {
 	background-color: #ECD5D8;
-	color: #BC2A4D;
+	color: #2C6D36;
 }
 
 p.post-notice {
@@ -261,8 +261,8 @@ p.post-notice.reported:before, p.post-notice.error:before {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #008B00; }
-a:hover	{ color: #558000; }
+a { color: #2C6D36; }
+a:hover	{ color: #C8611E; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
@@ -280,8 +280,8 @@ a:hover	{ color: #558000; }
 
 /* Post body links */
 .postlink {
-	color: #368AD2;
-	border-bottom-color: #368AD2;
+	color: #2C6D36;
+	border-bottom-color: #5AAE67;
 }
 
 .postlink:visited {
@@ -290,8 +290,8 @@ a:hover	{ color: #558000; }
 }
 
 .postlink:hover {
-	background-color: #D0E4F6;
-	color: #0D4473;
+	background-color: #D9EDDC;
+	color: #245C2D;
 }
 
 .signature a, .signature a:hover {
@@ -323,7 +323,7 @@ colored icons
 	color: #DF6500;
 }
 .read .mine {
-	color:#CBCBCB;
+	color:#566D5D;
 }
 /*
 --------------------------------------------------------------
@@ -331,11 +331,11 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #1B1B1B;
+	background-color: #D2E3D4;
 }
 
 ul.topiclist li {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 ul.topiclist dd {
@@ -356,15 +356,15 @@ ul.topiclist li.row dt a.subforum.unread {
 
 li.row {
 	border-top-color:  #ffffff;
-	border-bottom-color: #00608F;
+	border-bottom-color: #216E23;
 }
 
 li.row strong {
-	color: #ffffff;
+	color: #000;
 }
 
 li.row:hover {
-	background-color: #3B3B3B;
+	background-color: #D2E3D4;
 }
 
 li.row:hover dd {
@@ -383,22 +383,22 @@ li.header dt, li.header dd {
 /* Post body styles
 ----------------------------------------*/
 .postbody {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 /* Content container styles
 ----------------------------------------*/
 .content {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 .content h2, .panel h2 {
-	color: #CBCBCB;
+	color: #566D5D;
 	border-bottom-color:  #CCCCCC;
 }
 
 dl.faq dt {
-	color: #CBCBCB333;
+	color: #566D5D333;
 }
 
 .posthilit {
@@ -424,9 +424,9 @@ dl.faq dt {
 ----------------------------------------*/
 /* Quote block */
 blockquote {
-	background-color: #EBEADD;
+	background-color: #E4EBDD;
 	background-image: url("./images/quote.gif");
-	border-color:#DBDBCE;
+	border-color:#D3DBCE;
 }
 
 .rtl blockquote {
@@ -435,7 +435,7 @@ blockquote {
 
 blockquote blockquote {
 	/* Nested quotes */
-	background-color:#EFEED9;
+	background-color:#E3EFD9;
 }
 
 blockquote blockquote blockquote {
@@ -612,15 +612,15 @@ dd.profile-warnings {
 Colours and backgrounds for buttons.css
 -------------------------------------------------------------- */
 .button {
-	border-color: rgba(0, 0, 0, 0.6);
-	background-color: #020202;
-	background-image:linear-gradient(#484E55, #3A3F44 60%, #313539);
-	color: #558000;
+	border-color: #BABABA;
+	background-color: #F2F3F2;
+	color: #D85B0C;
 }
 
 
 .button:hover, .dropdown-visible .dropdown-select, .nojs .dropdown-container:hover .dropdown-select {
-	background-color: #CBCBCB;
+	border-color: #D85B0C;
+	background-color: #F2F3F2;
 	background-image: none;
 }
 
@@ -661,8 +661,8 @@ ul.cplist {
 }
 
 .panel-container table.table1 thead th {
-	color: #CBCBCB333;
-	border-bottom-color: #CBCBCB333;
+	color: #566D5D333;
+	border-bottom-color: #566D5D333;
 }
 
 #cp-main .pm-message {
@@ -673,19 +673,19 @@ ul.cplist {
 /* CP tabbed menu
 ----------------------------------------*/
 #tabs .tab > a {
-	background: #3B3B3B;
+	background: #D2E3D4;
 	color: #008B00;
 }
 
 #tabs .tab > a:hover {
-	background: #3B3B3B;
-	color: #558000;
+	background: #D2E3D4;
+	color: #C8611E;
 }
 
 #tabs .activetab > a,
 #tabs .activetab > a:hover {
-	background: #3B3B3B;
-	border-color: #3B3B3B;
+	background: #D2E3D4;
+	border-color: #D2E3D4;
 	color: #8d8d8d;
 }
 
@@ -708,11 +708,11 @@ ul.cplist {
 /* Responsive tabs
 ----------------------------------------*/
 .responsive-tab .responsive-tab-link:before {
-	border-color: #CBCBCB;
+	border-color: #566D5D;
 }
 
 .responsive-tab .responsive-tab-link:hover:before {
-	border-color: #558000;
+	border-color: #C8611E;
 }
 
 
@@ -720,7 +720,7 @@ ul.cplist {
 /* Preferences pane layout
 ----------------------------------------*/
 .panel-container h2 {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 .panel-container .panel {
@@ -734,7 +734,7 @@ ul.cplist {
 
 /* Friends list */
 .cp-mini {
-	background-color: #1B1B1B;
+	background-color: #E5EEE6;
 }
 
 dl.mini dt {
@@ -793,7 +793,7 @@ select {
 }
 
 label {
-	color: #fff;
+	color: #4B5E51;
 }
 
 option.disabled-option {
@@ -803,7 +803,7 @@ option.disabled-option {
 /* Definition list layout for forms
 ---------------------------------------- */
 dd label {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 fieldset.fields1 {
@@ -812,7 +812,7 @@ fieldset.fields1 {
 
 /* Hover effects */
 fieldset dl:hover dt label {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 fieldset.fields2 dl:hover dt label {
@@ -856,11 +856,11 @@ fieldset.quick-login input.inputbox {
 }
 
 .inputbox:hover {
-	border-color: #11A3EA;
+	border-color: #43B846;
 }
 
 .inputbox:focus {
-	border-color: #11A3EA;
+	border-color: #43B846;
 	color: #0F4987;
 }
 
@@ -877,8 +877,8 @@ fieldset.quick-login input.inputbox {
 ---------------------------------------- */
 
 a.button1, input.button1, input.button3, a.button2, input.button2 {
-	color: #ffffff;
-	background-color: #3B3B3B;
+	color: #000;
+	background-color: #F2F3F2;
 }
 
 a.button1, input.button1 {
@@ -901,13 +901,13 @@ a.button1, a.button2 {
 
 /* Hover states */
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-	border-color: #737373;
-	color: #737373;
+	border-color: #D85B0C;
+	color: #D85B0C;
 }
 
 /* Focus states */
 input.button1:focus, input.button2:focus, input.button3:focus {
-	border-color: #11A3EA;
+	border-color: #43B846;
 	color: #0F4987;
 }
 
@@ -958,12 +958,12 @@ input.disabled {
 
 .dropdown-extended .header {
 	background: #F1F8FF;
-	background: -moz-linear-gradient(top, #F1F8FF 0%, #3B3B3B 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F1F8FF), color-stop(100%, #3B3B3B));
-	background: -webkit-linear-gradient(top, #F1F8FF 0%, #3B3B3B 100%);
-	background: -o-linear-gradient(top, #F1F8FF 0%, #3B3B3B 100%);
-	background: -ms-linear-gradient(top, #F1F8FF 0%, #3B3B3B 100%);
-	background: linear-gradient(to bottom, #F1F8FF 0%, #3B3B3B 100%);
+	background: -moz-linear-gradient(top, #F1F8FF 0%, #D2E3D4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F1F8FF), color-stop(100%, #D2E3D4));
+	background: -webkit-linear-gradient(top, #F1F8FF 0%, #D2E3D4 100%);
+	background: -o-linear-gradient(top, #F1F8FF 0%, #D2E3D4 100%);
+	background: -ms-linear-gradient(top, #F1F8FF 0%, #D2E3D4 100%);
+	background: linear-gradient(to bottom, #F1F8FF 0%, #D2E3D4 100%);
 }
 
 .dropdown .pointer {
@@ -979,11 +979,11 @@ input.disabled {
 }
 
 ul.linklist li.responsive-menu a.responsive-menu-link:before {
-	border-color: #008B00;
+	border-color: #2C6D36;
 }
 
 ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist li.responsive-menu.visible a.responsive-menu-link:before {
-	border-color: #558000;
+	border-color: #C8611E;
 }
 
 .dropdown .dropdown-contents {
@@ -1008,9 +1008,9 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 ---------------------------------------- */
 
 .notification_list p.notification-time {
-	color: #CBCBCB;
+	color: #566D5D;
 }
 
 li.notification-reported strong, li.notification-disapproved strong {
-	color: #558000;
+	color: #C8611E;
 }
