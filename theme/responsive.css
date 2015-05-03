@@ -16,7 +16,6 @@ body {
 	padding: 0;
 }
 
-
 #wrap {
 	border: none;
 	border-radius: 0;
@@ -49,8 +48,17 @@ body {
 	#site-description {
 		float: none;
 		width: auto;
+		text-align: center;
 	}
-	 #site-description p {
+
+	.logo {
+		/* change display value to inline-block to show logo */
+		display: none;
+		float: none;
+		padding: 10px;
+	}
+
+	#site-description h1, #site-description p {
 		text-align: inherit;
 		float: none;
 		margin: 5px;
@@ -67,9 +75,6 @@ body {
 	----------------------------------------*/
 	.headerbar + .navbar {
 		margin-top: -5px;
-	}
-	.headerbar {
-		overflow:hidden;
 	}
 
 	/* Search
@@ -154,14 +159,6 @@ body {
 	}
 }
 @media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
-	#site-description h1 {
-		display: inline-block;
-		vertical-align: top;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		width: 60%;
-	}
 		ul.linklist >li {
 			display:block;
 		}
@@ -386,7 +383,7 @@ body {
 	}
 
 	.post .postprofile {
-		width: 100px;
+		width: auto;
 		border-width: 0 0 1px 0;
 		padding-bottom: 5px;
 		margin: 0;
@@ -406,8 +403,6 @@ body {
 
 	.postprofile .has-avatar .avatar-container {
 		margin: 0;
-		width: 100px;
-		height: 100px;
 		overflow: inherit;
 	}
 
@@ -416,9 +411,7 @@ body {
 	}
 
 	.postprofile .avatar {
-		margin-right: 0 auto;
-		width: 100%;
-		margin-bottom: 10px;
+		margin-right: 5px;
 	}
 
 
@@ -587,15 +580,7 @@ body {
 	}
 }
 
-@media all and (min-width: 550px) {
-	.headerbar{
-		height: 100%;
-	}
-	ul.linklist {
-		display: inline-block;
-		vertical-align: top;
-
-	}
+@media all and (min-width: 550px){
 	ul.linklist >li {
 		float:left;
 	}
@@ -606,25 +591,15 @@ body {
 	ul.topiclist dt {
 		width: 55%;
 	}
-	ul.topiclist.pm-header dt {
-		width: 75%;
-	}
 	ul.topiclist.pmlist dt {
 		width: 70%;
 	}
 	ul.topiclist.pmlist dt .list-inner {
 		width: 100%;
 	}
-	#nav-breadcrumbs {
-		display:block;
-	}
 }
 
 @media all and (min-width: 750px){
-	body {
-		background-size: 550px auto;
-	}
-
 	#wrap{
 		margin: 0 auto;
 	}
@@ -655,10 +630,5 @@ body {
 		width: 85%;
 		float: left;
 	}
-}
 
-@media all and (min-width: 1280px){
-	body {
-		background-size: 850px auto;
-	}
-	}
+}
