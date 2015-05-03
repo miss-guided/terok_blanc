@@ -35,6 +35,14 @@ body {
 .headerbar {
 	overflow:hidden;
 }
+.headerbar:after {
+	content: "";
+	display:block;
+	clear:both;
+	float:none;
+	width:1px;
+	height:1px;
+}
 
 #cp-main .forabg, #cp-main .forumdb, #cp-main .post, #cp-main .panel {
 	border-radius: 0px;
