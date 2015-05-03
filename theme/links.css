@@ -50,6 +50,9 @@ li.breadcrumbs span:first-child > a {
 	box-sizing: border-box;
 }
 
+.dropdown-extended a.mark_read .icon {
+	font-size: 20px;
+}
 .dropdown-extended li:hover a.mark_read {
 	display: block;
 }

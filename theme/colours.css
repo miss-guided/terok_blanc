@@ -227,11 +227,11 @@ dl.details dd {
 }
 
 .reported {
-	background-color: #F7ECEF;
+	background-color: #DF6500;
 }
 
 li.reported:hover {
-	background-color: #ECD5D8 !important;
+	background-color: #e27419 !important;
 }
 .sticky, .announce {
 	/* you can add a background for stickies and announcements*/
