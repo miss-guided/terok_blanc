@@ -1,4 +1,4 @@
-/* CSS Reset http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
+	/* CSS Reset http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
 ---------------------------------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,7 +54,7 @@ html {
 
 body {
 	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
-	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:"Helvetica Neue";
 	/*font-size: 62.5%;			 This sets the default font size to be equivalent to 10px */
 	font-size: 10px;
 	line-height: normal;
@@ -65,10 +65,9 @@ body {
 
 h1 {
 	/* Forum name */
-	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Helvetica Neue";
 	margin-right: 200px;
 	margin-top: 15px;
-	font-weight: bold;
 	font-size: 2em;
 }
 
@@ -76,7 +75,7 @@ h2 {
 	/* Forum header titles */
 	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 1.8em;
 	margin: 0.8em 0 0.2em 0;
 }
 
@@ -201,12 +200,6 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	margin-top: 20px;
 }
 
-.logo {
-	float: left;
-	width: auto;
-	padding: 10px 13px 0 10px;
-}
-
 .logo:hover {
 	text-decoration: none;
 }
@@ -226,7 +219,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 .headerbar {
 	background: transparent none repeat-x 0 0;
 	margin-bottom: 4px;
-	padding: 5px;
+	height: 51px;
 }
 
 .navbar {
@@ -238,7 +231,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 }
 #nav-main span:before{
 	font-weight:bold;
-	color:#2C6D36;
+	color:#008B00;
 }
 
 .forabg {
@@ -828,7 +821,7 @@ fieldset.fields1 dl.pmlist dd.recipients {
 	font-weight: normal;
 	line-height: 13px;
 	min-width: 10px;
-	padding: 3px;
+	padding: 1px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -854,13 +847,17 @@ fieldset.fields1 dl.pmlist dd.recipients {
 	width: 24px;
 }
 
-.pagination li.next a {
-	background-position: -50px 2px;
+.pagination li a i {
+	width: 12px;
+	height: 12px;
+	display:block;
+	font-size: 12px;
+}
+.pagination .jump-icon {
+	font-size: 14px;
+	margin-left: 6px;
 }
 
-.pagination li.previous a {
-	background-position: -30px 2px;
-}
 
 .pagination li.page-jump a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger { background-position: 0 -18px; }
 .pagination li.next a:hover { background-position: -50px -18px; }

@@ -140,9 +140,6 @@ a.top {
 	height: 11px;
 	display: block;
 	float: right;
-	overflow: hidden;
-	letter-spacing: 1000px;
-	text-indent: 11px;
 }
 
 a.top2 {

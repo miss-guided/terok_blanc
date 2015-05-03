@@ -26,10 +26,10 @@
 	margin-right: 4px;
 }
 
-.dropdown-select .icon {
+.dropdown-select .dropdown-icon {
 	margin-left: 26px;
 }
-.dropdown-select .icon:before {
+.dropdown-select .dropdown-icon:before {
 	border-left: 1px solid;
 	position: absolute;
 	top: 0;
@@ -154,6 +154,7 @@ ul.linklist.bulletin > li.small-icon:before {
 	float: right;
 	list-style: none;
 	margin-top: 2px;
+	margin-bottom: 10px;
 }
 
 .has-profile .post-buttons {
@@ -166,11 +167,13 @@ ul.linklist.bulletin > li.small-icon:before {
 }
 
 .post-buttons .icon-button {
-	padding: 0 5px;
+	padding: 2px 5px;
 	text-align: center;
-	width: 11px;
 }
 
+.post-buttons .icon-button i {
+	font-size: 16px;
+}
 .hastouch .post-buttons .icon-button {
 	padding: 2px 8px;
 }
