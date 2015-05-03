@@ -49,22 +49,6 @@
 
 	<div class="postbody">
 		<h3><a href="{U_VIEW_POST}">{POST_SUBJECT}</a></h3>
-
-		<ul class="post-buttons">
-			<li id="expand">
-				<a href="#post_details" onclick="viewableArea(getElementById('post_details'), true); var rev_text = getElementById('expand').getElementsByTagName('a').item(0).firstChild; if (rev_text.data.trim() == '{LA_EXPAND_VIEW}'){rev_text.data = '{LA_COLLAPSE_VIEW}'; } else if (rev_text.data.trim() == '{LA_COLLAPSE_VIEW}'){rev_text.data = '{LA_EXPAND_VIEW}';} return false;">
-					{L_EXPAND_VIEW}
-				</a>
-			</li>
-			<!-- IF U_EDIT -->
-				<li>
-					<a href="{U_EDIT}" title="{L_EDIT_POST}" class="button icon-button edit-icon">
-						<span>{L_EDIT_POST}</span>
-					</a>
-				</li>
-			<!-- ENDIF -->
-		</ul>
-
 		<!-- IF S_PM -->
 		<p class="author">
 			<strong>{L_SENT_AT}{L_COLON}</strong> {POST_DATE}
@@ -118,7 +102,20 @@
 				<!-- END attachment -->
 			</dl>
 		<!-- ENDIF -->
-
+		<ul class="post-buttons">
+			<li id="expand">
+				<a href="#post_details" onclick="viewableArea(getElementById('post_details'), true); var rev_text = getElementById('expand').getElementsByTagName('a').item(0).firstChild; if (rev_text.data.trim() == '{LA_EXPAND_VIEW}'){rev_text.data = '{LA_COLLAPSE_VIEW}'; } else if (rev_text.data.trim() == '{LA_COLLAPSE_VIEW}'){rev_text.data = '{LA_EXPAND_VIEW}';} return false;">
+					{L_EXPAND_VIEW}
+				</a>
+			</li>
+			<!-- IF U_EDIT -->
+				<li>
+					<a href="{U_EDIT}" title="{L_EDIT_POST}" class="button icon-button edit-icon">
+						<span>{L_EDIT_POST}</span>
+					</a>
+				</li>
+			<!-- ENDIF -->
+		</ul>
 		<!-- IF DELETED_MESSAGE or DELETE_REASON -->
 			<div class="notice">
 				{DELETED_MESSAGE}

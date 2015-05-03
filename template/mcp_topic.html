@@ -98,7 +98,7 @@
 			<div class="postbody" id="pr{postrow.POST_ID}">
 				<ul class="post-buttons">
 					<li>
-						<a href="{postrow.U_POST_DETAILS}" title="{L_POST_DETAILS}" class="button icon-button info-icon">
+						<a href="{postrow.U_POST_DETAILS}" title="{L_POST_DETAILS}" class="button icon-button info-icon"><span class="icon icon-info-with-circle"></span>
 							<span>{L_POST_DETAILS}</span>
 						</a>
 					</li>
@@ -153,9 +153,9 @@
 	<div class="action-bar bottom">
 		<div class="pagination">
 			{TOTAL_POSTS}
-			<!-- IF .pagination --> 
+			<!-- IF .pagination -->
 				<!-- INCLUDE pagination.html -->
-			<!-- ELSE --> 
+			<!-- ELSE -->
 				 &bull; {PAGE_NUMBER}
 			<!-- ENDIF -->
 		</div>

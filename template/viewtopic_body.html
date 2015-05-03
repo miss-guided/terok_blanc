@@ -210,46 +210,6 @@
 			<div id="post_content{postrow.POST_ID}"<!-- IF postrow.S_POST_HIDDEN --> style="display: none;"<!-- ENDIF -->>
 
 			<h3 <!-- IF postrow.S_FIRST_ROW -->class="first"<!-- ENDIF -->><!-- IF postrow.POST_ICON_IMG --><img src="{T_ICONS_PATH}{postrow.POST_ICON_IMG}" width="{postrow.POST_ICON_IMG_WIDTH}" height="{postrow.POST_ICON_IMG_HEIGHT}" alt="" /> <!-- ENDIF --><a href="#p{postrow.POST_ID}">{postrow.POST_SUBJECT}</a></h3>
-
-		<!-- IF not S_IS_BOT -->
-			<!-- IF postrow.U_EDIT or postrow.U_DELETE or postrow.U_REPORT or postrow.U_WARN or postrow.U_INFO or postrow.U_QUOTE -->
-				<ul class="post-buttons">
-					<!-- EVENT viewtopic_body_post_buttons_before -->
-					<!-- IF postrow.U_EDIT -->
-						<li>
-							<a href="{postrow.U_EDIT}" title="{L_EDIT_POST}" class="button icon-button"><i class="icon icon-pencil"></i><span>{L_BUTTON_EDIT}</span></a>
-						</li>
-					<!-- ENDIF -->
-					<!-- IF postrow.U_DELETE -->
-						<li>
-							<a href="{postrow.U_DELETE}" title="{L_DELETE_POST}" class="button icon-button delete-icon"><i class="icon icon-circle-with-minus"></i><span>{L_DELETE_POST}</span></a>
-						</li>
-					<!-- ENDIF -->
-					<!-- IF postrow.U_REPORT -->
-						<li>
-							<a href="{postrow.U_REPORT}" title="{L_REPORT_POST}" class="button icon-button"><i class="icon icon-warning"></i><span>{L_REPORT_POST}</span></a>
-						</li>
-					<!-- ENDIF -->
-					<!-- IF postrow.U_WARN -->
-						<li>
-							<a href="{postrow.U_WARN}" title="{L_WARN_USER}" class="button icon-button "><i class="icon icon-megaphone"></i><span>{L_WARN_USER}</span></a>
-						</li>
-					<!-- ENDIF -->
-					<!-- IF postrow.U_INFO -->
-						<li>
-							<a href="{postrow.U_INFO}" title="{L_INFORMATION}" class="button icon-button"><i class="icon icon-info-with-circle"></i><span>{L_INFORMATION}</span></a>
-						</li>
-					<!-- ENDIF -->
-					<!-- IF postrow.U_QUOTE -->
-						<li>
-							<a href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}" class="button icon-button"><i class="icon icon-quote"></i><span>{L_QUOTE}</span></a>
-						</li>
-					<!-- ENDIF -->
-					<!-- EVENT viewtopic_body_post_buttons_after -->
-				</ul>
-			<!-- ENDIF -->
-		<!-- ENDIF -->
-
 			<p class="author"><!-- IF S_IS_BOT -->{postrow.MINI_POST_IMG}<!-- ELSE --><a href="{postrow.U_MINI_POST}">{postrow.MINI_POST_IMG}</a><!-- ENDIF --><span class="responsive-hide">{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> &raquo; </span>{postrow.POST_DATE} </p>
 
 			<!-- IF postrow.S_POST_UNAPPROVED -->
@@ -309,6 +269,44 @@
 
 			<!-- IF postrow.BUMPED_MESSAGE --><div class="notice"><br /><br />{postrow.BUMPED_MESSAGE}</div><!-- ENDIF -->
 			<!-- EVENT viewtopic_body_postrow_post_notices_after -->
+			<!-- IF not S_IS_BOT -->
+				<!-- IF postrow.U_EDIT or postrow.U_DELETE or postrow.U_REPORT or postrow.U_WARN or postrow.U_INFO or postrow.U_QUOTE -->
+					<ul class="post-buttons">
+						<!-- EVENT viewtopic_body_post_buttons_before -->
+						<!-- IF postrow.U_EDIT -->
+							<li>
+								<a href="{postrow.U_EDIT}" title="{L_EDIT_POST}" class="button icon-button"><i class="icon icon-pencil"></i><span>{L_BUTTON_EDIT}</span></a>
+							</li>
+						<!-- ENDIF -->
+						<!-- IF postrow.U_DELETE -->
+							<li>
+								<a href="{postrow.U_DELETE}" title="{L_DELETE_POST}" class="button icon-button delete-icon"><i class="icon icon-circle-with-minus"></i><span>{L_DELETE_POST}</span></a>
+							</li>
+						<!-- ENDIF -->
+						<!-- IF postrow.U_REPORT -->
+							<li>
+								<a href="{postrow.U_REPORT}" title="{L_REPORT_POST}" class="button icon-button"><i class="icon icon-warning"></i><span>{L_REPORT_POST}</span></a>
+							</li>
+						<!-- ENDIF -->
+						<!-- IF postrow.U_WARN -->
+							<li>
+								<a href="{postrow.U_WARN}" title="{L_WARN_USER}" class="button icon-button "><i class="icon icon-megaphone"></i><span>{L_WARN_USER}</span></a>
+							</li>
+						<!-- ENDIF -->
+						<!-- IF postrow.U_INFO -->
+							<li>
+								<a href="{postrow.U_INFO}" title="{L_INFORMATION}" class="button icon-button"><i class="icon icon-info-with-circle"></i><span>{L_INFORMATION}</span></a>
+							</li>
+						<!-- ENDIF -->
+						<!-- IF postrow.U_QUOTE -->
+							<li>
+								<a href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}" class="button icon-button"><i class="icon icon-quote"></i><span>{L_QUOTE}</span></a>
+							</li>
+						<!-- ENDIF -->
+						<!-- EVENT viewtopic_body_post_buttons_after -->
+					</ul>
+				<!-- ENDIF -->
+			<!-- ENDIF -->
 			<!-- IF postrow.SIGNATURE --><div id="sig{postrow.POST_ID}" class="signature">{postrow.SIGNATURE}</div><!-- ENDIF -->
 
 			<!-- EVENT viewtopic_body_postrow_post_content_footer -->
@@ -316,7 +314,7 @@
 
 		</div>
 
-		<div class="back2top"><a href="#top" class="top" title="{L_BACK_TO_TOP}">{L_BACK_TO_TOP}</a></div>
+		<div class="back2top"><a href="#top" class="top" title="{L_BACK_TO_TOP}"><span class="icon icon-arrow-with-circle-up"></span><span class="audible">{L_BACK_TO_TOP}</span></a></div>
 
 		</div>
 	</div>
@@ -360,7 +358,7 @@
 
 	<!-- IF .quickmod -->
 		<div class="dropdown-container dropdown-container-{S_CONTENT_FLOW_BEGIN} dropdown-up dropdown-{S_CONTENT_FLOW_END} dropdown-button-control" id="quickmod">
-			<span title="{L_QUICK_MOD}" class="dropdown-trigger button icon-button modtools-icon dropdown-select">{L_QUICK_MOD}</span>
+			<span title="{L_QUICK_MOD}" class="dropdown-trigger button dropdown-select"><i class="icon icon-modern-mic"></i><span class="audible"> {L_QUICK_MOD}</span></span>
 			<div class="dropdown hidden">
 				<div class="pointer"><div class="pointer-inner"></div></div>
 				<ul class="dropdown-contents">
