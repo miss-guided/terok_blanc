@@ -54,6 +54,10 @@ body {
 	#site-description h1 {
 		display: inline-block;
 		vertical-align: top;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: 60%;
 	}
 	 #site-description p {
 		text-align: inherit;
