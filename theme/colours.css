@@ -20,6 +20,13 @@ html, body {
 	background-color: #FFF;
 }
 
+body {
+	background-image: url('./images/bg_spitze_weissgruen.svg');
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+
 h1 {
 	color: #ffffff;
 }
