@@ -1,5 +1,5 @@
 body {
-	background-image: url('./images/bg_spitze_weissgruen.svg');
+	background-image: url('./images/bg_spitze.svg');
 	background-repeat: no-repeat;
 	background-position: right top;
 }
@@ -23,12 +23,16 @@ body {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	margin-right: 5px;
+
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.imageset.icon_topic_newest:before {
+	content: "\e6ea";
+	font-size: 12px;
+}
 .imageset.icon_topic_latest:before {
 	content: "\e61e";
 	font-size: 12px;
@@ -36,8 +40,6 @@ body {
 
 .imageset.icon_post_target:before {
 	content: "\e6cc";
-	font-size: 12px;
-
 }
 
 @media all and ( min-width: 550px ) {
