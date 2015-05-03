@@ -14,6 +14,26 @@ body {
 	margin-right: 5px;
 }
 
+.imageset.icon_topic_latest {
+	font-size: 0;
+	font-family: 'entypo';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.imageset.icon_topic_latest:before {
+	content: "\e61e";
+	font-size: 12px;
+}
+
 @media all and ( min-width: 550px ) {
 	.site_logo {
 		background-image: url('./images/header_forum_cut.svg');
