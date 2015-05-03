@@ -575,11 +575,6 @@ body {
 		margin-top: 10px;
 		vertical-align: middle;
 	}
-	dt.has-profile-rank.has-avatar {
-		float:left;
-		margin-right: 10px;
-		height: 85px;
-	}
 }
 
 @media only screen and (max-width: 430px), only screen and (max-device-width: 430px) {
@@ -644,6 +639,13 @@ body {
 		width: 100%;
 		margin-left: 30px;
 		margin-top: 10px;
+	}
+}
+@media all and (max-width: 750px) {
+	dt.has-profile-rank.has-avatar {
+		float:left;
+		margin-right: 10px;
+		height: 85px;
 	}
 }
 
