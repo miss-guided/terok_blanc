@@ -42,8 +42,7 @@
 		<!-- EVENT overall_header_navigation_prepend -->
 		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->><span class="icon icon-help"></span> <a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">{L_FAQ}</a></li>
 		<!-- EVENT overall_header_navigation_append -->
-		<!-- IF U_ACP --><li data-last-responsive="true">
-		<span class="icon icon-cog"></span> <a href="{U_ACP}" title="{L_ACP}" role="menuitem">{L_ACP_SHORT}</a></li><!-- ENDIF -->
+		<!-- IF U_ACP --><li data-last-responsive="true"><span class="icon icon-cog"></span> <a href="{U_ACP}" title="{L_ACP}" role="menuitem">{L_ACP_SHORT}</a></li><!-- ENDIF -->
 		<!-- IF U_MCP --><li data-last-responsive="true"><span class="icon icon-megaphone"></span> <a href="{U_MCP}" title="{L_MCP}" role="menuitem">{L_MCP_SHORT}</a></li><!-- ENDIF -->
 
 	<!-- IF S_REGISTERED_USER -->
@@ -58,13 +57,13 @@
 
 						<!-- EVENT navbar_header_profile_list_before -->
 
-						<li class="icon icon-ucp"><a href="{U_PROFILE}" title="{L_PROFILE}" role="menuitem">{L_PROFILE}</a></li>
-						<li class="small-icon icon-profile"><a href="{U_USER_PROFILE}" title="{L_READ_PROFILE}" role="menuitem">{L_READ_PROFILE}</a></li>
+						<li> <i class="icon icon-home" ></i> <a href="{U_PROFILE}" title="{L_PROFILE}" role="menuitem">{L_PROFILE}</a></li>
+						<li><i class="icon icon-user"></i> <a href="{U_USER_PROFILE}" title="{L_READ_PROFILE}" role="menuitem">{L_READ_PROFILE}</a></li>
 
 						<!-- EVENT navbar_header_profile_list_after -->
 
 						<li class="separator"></li>
-						<li class="small-icon icon-logout"><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">{L_LOGIN_LOGOUT}</a></li>
+						<li><i class="icon icon-log-out"></i> <a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">{L_LOGIN_LOGOUT}</a></li>
 					</ul>
 				</div>
 			</div>
