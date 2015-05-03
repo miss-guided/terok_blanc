@@ -16,6 +16,7 @@ body {
 	padding: 0;
 }
 
+
 #wrap {
 	border: none;
 	border-radius: 0;
@@ -31,7 +32,6 @@ body {
 	margin-left: -5px;
 	margin-right: -5px;
 }
-
 .headerbar {
 	overflow:hidden;
 }
@@ -49,13 +49,6 @@ body {
 		max-height: 32px;
 	}
 
-	#site-description {
-		float: none;
-		width: auto;
-		text-align: center;
-	}
-
-
 	#site-description h1,
 	#site-description p {
 		text-align: inherit;
@@ -65,6 +58,7 @@ body {
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+
 
 	#site-description p, .search-header {
 		display: none;
@@ -132,7 +126,7 @@ body {
 	/* Forums and topics lists
 	----------------------------------------*/
 
-	ul.topiclist.forums dd.lastpost ,
+	ul.topiclist.forums dd.lastpost,
 	ul.topiclist.topics dd.lastpost {
 		display: inline-block;
 		width: 28%;
@@ -158,6 +152,14 @@ body {
 	}
 }
 @media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
+	#site-description h1 {
+		display: inline-block;
+		vertical-align: top;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: 60%;
+	}
 		ul.linklist >li {
 			display:block;
 		}
@@ -382,7 +384,6 @@ body {
 	}
 
 	.post .postprofile {
-		width: auto;
 		border-width: 0 0 1px 0;
 		padding-bottom: 5px;
 		margin: 0;
@@ -398,15 +399,6 @@ body {
 	.postprofile dt, .postprofile dd.profile-rank, .search .postprofile dd {
 		display: block;
 		margin: 0;
-	}
-
-	.postprofile .has-avatar .avatar-container {
-		margin: 0;
-		overflow: inherit;
-	}
-
-	.postprofile .avatar-container:after {
-		clear: none;
 	}
 	.postprofile dd {
 		display:none;
@@ -467,12 +459,21 @@ body {
 }
 
 @media all and (min-width: 550px) {
-	.headerbar{
-		height: 100%;
+	.postprofile .has-avatar .avatar-container {
+		margin: 0;
+		width: 100px;
+		height: 100px;
+		overflow: inherit;
+	}
+
+	.postprofile .avatar-container:after {
+		clear: none;
 	}
 
 	.postprofile .avatar {
-		margin-right: 5px;
+		margin-right: 0 auto;
+		width: 100%;
+		margin-bottom: 10px;
 	}
 
 
@@ -646,7 +647,10 @@ body {
 	}
 }
 
-@media all and (min-width: 550px){
+@media all and (min-width: 550px) {
+	.headerbar{
+		height: 100%;
+	}
 	ul.linklist >li {
 		float:left;
 	}
@@ -657,15 +661,25 @@ body {
 	ul.topiclist dt {
 		width: 55%;
 	}
+	ul.topiclist.pm-header dt {
+		width: 75%;
+	}
 	ul.topiclist.pmlist dt {
 		width: 70%;
 	}
 	ul.topiclist.pmlist dt .list-inner {
 		width: 100%;
 	}
+	#nav-breadcrumbs {
+		display:block;
+	}
 }
 
 @media all and (min-width: 750px){
+	body {
+		background-size: 550px auto;
+	}
+
 	#wrap{
 		margin: 0 auto;
 	}
@@ -696,5 +710,10 @@ body {
 		width: 85%;
 		float: left;
 	}
+}
 
+@media all and (min-width: 1280px){
+	body {
+		background-size: 850px auto;
+	}
 }
