@@ -1,5 +1,7 @@
 	/* CSS Reset http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
 ---------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,7 +56,7 @@ html {
 
 body {
 	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
-	font-family:"Helvetica Neue";
+	font-family: 'Open Sans', sans-serif;
 	/*font-size: 62.5%;			 This sets the default font size to be equivalent to 10px */
 	font-size: 10px;
 	line-height: normal;
@@ -65,7 +67,6 @@ body {
 
 h1 {
 	/* Forum name */
-	font-family: "Helvetica Neue";
 	margin-right: 200px;
 	margin-top: 15px;
 	font-size: 2em;
@@ -73,7 +74,6 @@ h1 {
 
 h2 {
 	/* Forum header titles */
-	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: normal;
 	font-size: 1.8em;
 	margin: 0.8em 0 0.2em 0;
@@ -85,7 +85,7 @@ h2.solo {
 
 h3 {
 	/* Sub-headers (also used as post headers, but defined later) */
-	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+
 	font-weight: bold;
 	text-transform: uppercase;
 	border-bottom: 1px solid transparent;
@@ -97,7 +97,6 @@ h3 {
 
 h4 {
 	/* Forum and topic list titles */
-	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 1.3em;
 }
 
