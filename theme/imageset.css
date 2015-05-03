@@ -14,7 +14,7 @@ body {
 	margin-right: 5px;
 }
 
-.imageset.icon_topic_latest {
+.imageset {
 	font-size: 0;
 	font-family: 'entypo';
 	speak: none;
@@ -23,7 +23,7 @@ body {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
+	margin-right: 5px;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -32,6 +32,12 @@ body {
 .imageset.icon_topic_latest:before {
 	content: "\e61e";
 	font-size: 12px;
+}
+
+.imageset.icon_post_target:before {
+	content: "\e6cc";
+	font-size: 12px;
+
 }
 
 @media all and ( min-width: 550px ) {
