@@ -225,14 +225,6 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	padding: 3px 10px;
 }
 
-#nav-main li:before{
-		content:"";
-}
-#nav-main span:before{
-	font-weight:bold;
-	color:#008B00;
-}
-
 .forabg {
 	background: transparent none repeat-x 0 0;
 	margin-bottom: 4px;
