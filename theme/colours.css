@@ -194,9 +194,9 @@ dl.details dd {
 }
 
 .pagination li.active span {
-	color: #67816C;
-	background-color: #FFF;
-	border-color: #B7BDB8;
+	color: #fff;
+	background-color: #5AAE67;
+	border-color: #2C6D36;
 }
 
 .pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
@@ -598,7 +598,7 @@ fieldset.polls dd div {
 }
 
 .postprofile strong {
-	color: #ffffff;
+	font-weight: bold;
 }
 
 .online {
