@@ -24,7 +24,7 @@
 	<!-- IF .topicrow -->
 		<ul class="topiclist<!-- IF S_MERGE_SELECT --> missing-column<!-- ENDIF -->">
 			<li class="header">
-				<dl class="icon">
+				<dl>
 					<dt><div class="list-inner">{L_TOPICS}</div></dt>
 					<dd class="posts">{L_REPLIES}</dd>
 					<dd class="lastpost"><span>{L_LAST_POST}</span></dd>
@@ -36,7 +36,7 @@
 
 		<!-- BEGIN topicrow -->
 		<li class="row<!-- IF topicrow.S_ROW_COUNT is odd --> bg1<!-- ELSE --> bg2<!-- ENDIF --><!-- IF topicrow.S_TOPIC_REPORTED --> reported<!-- ENDIF -->">
-			<dl class="icon {topicrow.TOPIC_IMG_STYLE}">
+			<dl><span class="icon {topicrow.TOPIC_IMG_STYLE}"></span>
 				<dt <!-- IF topicrow.TOPIC_ICON_IMG -->style="background-image: url({T_ICONS_PATH}{topicrow.TOPIC_ICON_IMG}); background-repeat: no-repeat;"<!-- ENDIF -->>
 					<!-- IF topicrow.S_UNREAD_TOPIC --><a href="{topicrow.U_NEWEST_POST}" class=""></a><!-- ENDIF -->
 					<div class="list-inner">

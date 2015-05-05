@@ -16,7 +16,7 @@
 <!-- IF .topicrow -->
 	<ul class="topiclist missing-column">
 		<li class="header">
-			<dl class="icon">
+			<dl>
 				<dt><div class="list-inner">{L_BOOKMARKS}</div></dt>
 				<dd class="lastpost"><span>{L_LAST_POST}</span></dd>
 				<dd class="mark">{L_MARK}</dd>
@@ -34,7 +34,7 @@
 					<dd class="mark"><input type="checkbox" name="t[{topicrow.TOPIC_ID}]" id="t{topicrow.TOPIC_ID}" /></dd>
 				</dl>
 			<!-- ELSE -->
-			<dl class="icon {topicrow.TOPIC_IMG_STYLE}">
+			<dl ><span class="icon {topicrow.TOPIC_IMG_STYLE}"></span>
 				<dt<!-- IF topicrow.TOPIC_ICON_IMG --> style="background-image: url({T_ICONS_PATH}{topicrow.TOPIC_ICON_IMG}); background-repeat: no-repeat;"<!-- ENDIF --> title="{topicrow.TOPIC_FOLDER_IMG_ALT}">
 					<!-- IF topicrow.S_UNREAD_TOPIC --><a href="{topicrow.U_NEWEST_POST}" class=""></a><!-- ENDIF -->
 					<div class="list-inner">
