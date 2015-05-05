@@ -206,7 +206,7 @@ dl.details dd {
 }
 
 .pagination li.next a, .pagination li.previous a, .pagination li.page-jump a {
-	background-image: url("./images/icons_pagination.png");
+	background-image: none;
 }
 
 /* Pagination in viewforum for multipage topics */
@@ -287,8 +287,8 @@ a:hover	{ color: #C8611E; }
 }
 
 .postlink:visited {
-	color: #5D8FBD;
-	border-bottom-color: #5D8FBD;
+	color: #B5C1CB;
+	border-bottom-color: #B5C1CB;
 }
 
 .postlink:hover {
@@ -765,7 +765,7 @@ dl.mini dt {
 }
 
 .pmlist li.pm_friend_colour, .pm_friend_colour {
-	border-color: #5D8FBD;
+	border-color: #B5C1CB;
 }
 
 .pmlist li.pm_foe_colour, .pm_foe_colour {
