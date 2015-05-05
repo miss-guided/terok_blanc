@@ -95,14 +95,6 @@ hr {
 	background-color: #D2E3D4;
 }
 
-.post:target .content {
-	color: #ffffff;
-}
-
-.post:target h3 a {
-	color: #ffffff;
-}
-
 .bg1 {
 	background-color: #EFF4EF;
 }
