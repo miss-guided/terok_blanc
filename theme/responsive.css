@@ -35,6 +35,7 @@ body {
 .headerbar {
 	overflow:hidden;
 }
+
 .headerbar:after {
 	content: "";
 	display:block;
@@ -715,6 +716,11 @@ body {
 	.postprofile {
 		width: 13%;
 		float: right;
+		max-width: 100px;
+	}
+	.postprofile img {
+		max-width: 100px;
+		height: auto;
 	}
 	.postbody {
 		width: 85%;

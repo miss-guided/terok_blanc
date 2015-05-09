@@ -456,9 +456,9 @@ blockquote cite {
 	/* Username/source of quoter */
 	font-style: normal;
 	font-weight: bold;
-	margin-left: 20px;
-	display: block;
+	display: inline-block;
 	font-size: 0.9em;
+	padding-left: 2px;
 }
 
 blockquote cite cite {
@@ -702,6 +702,8 @@ fieldset.polls dd div {
 	display: block;
 	float: left;
 	max-width: 100%;
+	width: 100%;
+	margin:0 auto;
 }
 
 .postprofile .avatar img {

@@ -26,6 +26,7 @@
 .imageset.icon_topic_newest:before {
 	content: "\e6ea";
 	font-size: 12px;
+	line-height: 19px;
 }
 .imageset.icon_topic_latest:before {
 	content: "\e61e";
@@ -35,6 +36,57 @@
 .imageset.icon_post_target:before {
 	content: "\e6cc";
 }
+/*
+--------------------------------------------------------------
+search topic icons
+--------------------------------------------------------------
+*/
+.search-icons.topic_unread_hot:before,
+.search-icons.topic_unread_hot_mine:before,
+.search-icons.topic_read_hot_mine:before,
+.topic_unread_hot .icon.icon-menu:before,
+.topic_read_hot .icon.icon-menu:before,
+.search-icons.topic_read_hot:before {
+	content:'\e610';
+}
+.search-icons.topic_unread:before,
+.search-icons.topic_unread_mine:before,
+.search-icons.topic_read_mine:before,
+.search-icons.topic_read:before {
+	content: '\e6dd';
+}
+.search-icons.announce_unread_mine:before,
+.search-icons.announce_unread:before,
+.search-icons.announce_read_mine:before,
+.search-icons.announce_read:before {
+	content: '\e6c8';
+}
+.topic_read_locked_mine .icon-menu:before,
+.topic_read_locked .icon-menu:before,
+.topic_unread_locked_mine .icon-menu:before,
+.topic_unread_locked .icon-menu:before,
+.search-icons.topic_read_locked:before,
+.search-icons.topic_read_locked_mine:before,
+.search-icons.topic_unread_locked_mine:before,
+.search-icons.topic_unread_locked:before {
+	content: '\e6d1';
+}
+.search-icons.topic_unread_hot_mine:after,
+.search-icons.topic_read_hot_mine:after,
+.search-icons.topic_read_locked_mine:after,
+.search-icons.topic_unread_mine:after,
+.search-icons.topic_read_mine:after,
+.search-icons.announce_unread:after,
+.search-icons.announce_read_mine:after {
+		content: '\e723';
+		position: absolute;
+		right: -5px;
+}
+
+.search-icons {
+	position: relative;
+}
+
 
 @media all and ( min-width: 550px ) {
 	.site_logo {
