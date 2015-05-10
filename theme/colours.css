@@ -205,14 +205,6 @@ dl.details dd {
 	color: #ffffff;
 }
 
-.pagination li.next a, .pagination li.previous a, .pagination li.page-jump a {
-	background-image: url("./images/icons_pagination.png");
-}
-
-/* Pagination in viewforum for multipage topics */
-.row .pagination {
-	background-image: url("./images/icon_pages.gif");
-}
 
 /* Miscellaneous styles
 ---------------------------------------- */
@@ -244,18 +236,6 @@ div.rules {
 p.post-notice {
 	background-color: #ECD5D8;
 	background-image: none;
-}
-
-p.post-notice.deleted:before {
-	background-image: url("./images/icon_topic_deleted.png");
-}
-
-p.post-notice.unapproved:before {
-	background-image: url("./images/icon_topic_unapproved.gif");
-}
-
-p.post-notice.reported:before, p.post-notice.error:before {
-	background-image: url("./images/icon_topic_reported.gif");
 }
 
 /*
@@ -300,14 +280,6 @@ a:hover	{ color: #C8611E; }
 	background-color: transparent;
 }
 
-/* Back to top of page */
-a.top {
-	background-image: url("./images/icon_back_top.gif");
-}
-
-a.top2 {
-	background-image: url("./images/icon_back_top.gif");
-}
 
 /* Arrow links  */
 
@@ -347,10 +319,6 @@ ul.topiclist dd {
 .rtl ul.topiclist dd {
 	border-right-color: #ffffff;
 	border-left-color: transparent;
-}
-
-ul.topiclist li.row dt a.subforum.read {
-	background-image: url("./images/subforum_read.gif");
 }
 
 ul.topiclist li.row dt a.subforum.unread {
@@ -427,13 +395,9 @@ dl.faq dt {
 /* Quote block */
 blockquote {
 	background-color: #E4EBDD;
-	background-image: url("./images/quote.gif");
 	border-color:#D3DBCE;
 }
 
-.rtl blockquote {
-	background-image: url("./images/quote_rtl.gif");
-}
 
 blockquote blockquote {
 	/* Nested quotes */
@@ -601,9 +565,6 @@ fieldset.polls dd div {
 	font-weight: bold;
 }
 
-.online {
-	background-image: url("./en/icon_user_online.gif");
-}
 
 dd.profile-warnings {
 	color: #BC2A4D;
@@ -913,9 +874,7 @@ input.button1:focus, input.button2:focus, input.button3:focus {
 	color: #0F4987;
 }
 
-input.search {
-	background-image: url("./images/icon_textbox_search.gif");
-}
+
 
 input.disabled {
 	color: #666666;
@@ -927,16 +886,13 @@ input.disabled {
 	background-color: #ffffff;
 	border-color: #999999;
 }
-.phpbb_alert .alert_close {
-	background-image: url("./images/alert_close.png");
-}
+
 #darken {
 	background-color: #ffffff;
 }
 
 #loading_indicator {
 	background-color: #ffffff;
-	background-image: url("./images/loading.gif");
 }
 
 .dropdown-extended ul li {
