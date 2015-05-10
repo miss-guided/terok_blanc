@@ -896,14 +896,17 @@ fieldset.fields1 dl.pmlist dd.recipients {
 
 .phpbb_alert .alert_close {
 	display: block;
-	float: right;
-	width: 16px;
-	height: 16px;
-	overflow: hidden;
+	position: absolute;
+	width: 20px;
+	height: 20px;
 	text-decoration: none !important;
-	background: transparent none 0 0 no-repeat;
-	margin-top: -7px;
-	margin-right: -31px;
+	right: 3px;
+	font-family: 'entypo'
+}
+.phpbb_alert .alert_close:before {
+		display:block;
+		content:'\e679';
+		font-size: 20px;
 }
 .phpbb_alert .alert_close:hover {
 	background-position: 0 -16px;
