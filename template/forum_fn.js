@@ -97,6 +97,9 @@ function viewableArea(e, itself) {
 */
 jQuery(function($) {
 	'use strict';
+	$('.spoil-button').on('click', function() {
+	  $( this ).parent().find('.spoiled-text').fadeToggle();
+	});
 
 	$('.sub-panels').each(function() {
 

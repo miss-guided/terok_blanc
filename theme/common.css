@@ -120,6 +120,9 @@ hr {
 	clear: both;
 }
 
+.spoiled-text {
+	display:none;
+} 
 hr.dashed {
 	border-top-style: dashed;
 	margin: 10px 0;
