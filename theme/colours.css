@@ -756,6 +756,9 @@ dl.mini dt {
 	border-right-color: #BC2A4D;
 }
 
+.pmlist .pm_unread::before {
+	color: #DF6500;
+}
 .pmlist li.pm_marked_colour, .pm_marked_colour {
 	border-color: #FF6600;
 }
