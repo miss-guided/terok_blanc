@@ -15,9 +15,6 @@
 						<!-- IF S_REGISTERED_USER -->
 							<li><span class="icon icon-user"></span> <a href="{U_SEARCH_SELF}" role="menuitem">{L_SEARCH_SELF}</a></li>
 						<!-- ENDIF -->
-						<!-- IF S_USER_LOGGED_IN -->
-							<li> <span class="icon icon-new"></span> 	<a href="{U_SEARCH_NEW}" role="menuitem">{L_SEARCH_NEW}</a></li>
-						<!-- ENDIF -->
 						<!-- IF S_LOAD_UNREADS -->
 							<li><span class="icon icon-news"></span> <a href="{U_SEARCH_UNREAD}" role="menuitem">{L_SEARCH_UNREAD}</a></li>
 						<!-- ENDIF -->
@@ -38,9 +35,14 @@
 				</ul>
 			</div>
 		</li>
-
+    <!-- IF S_USER_LOGGED_IN -->
+      <li> <span class="icon icon-new"></span> 	<a href="{U_SEARCH_NEW}" role="menuitem">{L_SEARCH_NEW}</a> | </li>
+    <!-- ENDIF -->
+      <li> <span class="icon icon-lock"></span> <a href="./datenschutzerklaerung.html" role="menueitem">Datenschutzerklärung</a> | </li>
+      <li> <span class="icon icon-credit-card"></span> <a href="./serverkosten.html" role="menueitem">Serverkostenbeteiligung</a> | </li>
+      <li> <span class="icon icon-heart-outlined"></span> <a href="./netiquette.html" role="menueitem">Netiquette</a> | </li>
 		<!-- EVENT overall_header_navigation_prepend -->
-		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->><span class="icon icon-help"></span> <a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">{L_FAQ}</a></li>
+		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->><span class="icon icon-help"></span> <a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">{L_FAQ}</a> | </li>
 		<!-- EVENT overall_header_navigation_append -->
 		<!-- IF U_ACP --><li data-last-responsive="true"><span class="icon icon-cog"></span> <a href="{U_ACP}" title="{L_ACP}" role="menuitem">{L_ACP_SHORT}</a></li><!-- ENDIF -->
 		<!-- IF U_MCP --><li data-last-responsive="true"><span class="icon icon-megaphone"></span> <a href="{U_MCP}" title="{L_MCP}" role="menuitem">{L_MCP_SHORT}</a></li><!-- ENDIF -->
@@ -91,15 +93,25 @@
 	</ul>
 
 	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
-		<!-- DEFINE $MICRODATA = ' itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""' -->
+		<!-- DEFINE $MICRODATA = ' itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope' -->
 		<!-- EVENT overall_header_breadcrumbs_before -->
-		<li class="breadcrumbs"><span class="icon icon-home home_icon"></span>
-			<!-- IF U_SITE_HOME --><span class="crumb"><a href="{U_SITE_HOME}"{$MICRODATA} data-navbar-reference="home">{L_SITE_HOME}</a></span><!-- ENDIF -->
+		<li class="breadcrumbs">
+      <span class="icon icon-home home_icon"></span>
+			<!-- IF U_SITE_HOME -->
+      <span class="crumb"><a href="{U_SITE_HOME}"{$MICRODATA} data-navbar-reference="home">{L_SITE_HOME}</a></span>
+      <!-- ENDIF -->
 			<!-- EVENT overall_header_breadcrumb_prepend -->
 			<span class="crumb"><a href="{U_INDEX}" accesskey="h"{$MICRODATA} data-navbar-reference="index">{L_INDEX}</a></span>
-			<!-- BEGIN navlinks -->
-				<!-- EVENT overall_header_navlink_prepend -->
-				<span class="crumb"><a href="{navlinks.U_VIEW_FORUM}"{$MICRODATA}<!-- IF navlinks.MICRODATA --> {navlinks.MICRODATA}<!-- ENDIF -->>{navlinks.FORUM_NAME}</a></span>
+      <!-- BEGIN navlinks -->
+        {% set NAVLINK_NAME = navlinks.BREADCRUMB_NAME | default(navlinks.FORUM_NAME) %}
+        {% set NAVLINK_LINK = navlinks.U_BREADCRUMB | default(navlinks.U_VIEW_FORUM) %}
+        <!-- EVENT overall_header_navlink_prepend -->
+        <span class="crumb" {$MICRODATA}<!-- IF navlinks.MICRODATA --> {navlinks.MICRODATA}<!-- ENDIF -->>
+          <a href="{{ NAVLINK_LINK }}" itemtype="https://schema.org/Thing" itemscope itemprop="item">
+            <span itemprop="name">{{ NAVLINK_NAME }}</span>
+          </a>
+        <meta itemprop="position" content="{{ navlink_position }}{% set navlink_position = navlink_position + 1 %}" />
+      </span>
 				<!-- EVENT overall_header_navlink_append -->
 			<!-- END navlinks -->
 			<!-- EVENT overall_header_breadcrumb_append -->
