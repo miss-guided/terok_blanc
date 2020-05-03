@@ -625,7 +625,8 @@ body {
 	}
 
 	p.jumpbox-return {
-		margin: 20px;
+    font-size: 16px;
+		margin-top: 20px;
 	}
 
 	.display-options > label:nth-child(1) {
